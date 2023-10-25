@@ -156,6 +156,7 @@ export const DELETE = async (request) => {
     );
   }
 
+  
   const prisma = getPrisma();
 
   try {
