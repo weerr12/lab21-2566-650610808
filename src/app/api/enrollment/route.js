@@ -83,7 +83,7 @@ export const POST = async (request) => {
   const prisma = getPrisma();
   //1.check if courseNo does not exist on database
   //send this response back if courseNo does not exist
-  if ((await prisma.course.findUnique({ where: { courseNo } })) === null)
+  if ((await prisma.course.findUnique({ where: { courseNo } })) == null)
     return NextResponse.json(
       {
         ok: false,
