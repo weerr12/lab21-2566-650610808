@@ -106,7 +106,7 @@ export const POST = async (request) => {
       { status: 400 }
     );
 
-  //3.if conditions above are not met, perform inserting data here
+  // 3.if conditions above are not met, perform inserting data here//
   await prisma.enrollment.create({
     data: {
       studentId,
